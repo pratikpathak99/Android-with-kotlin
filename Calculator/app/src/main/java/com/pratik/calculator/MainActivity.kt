@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
+
+
     val ans = null ;
 
     fun Button_on(v: View) {
@@ -27,8 +29,12 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "1".toInt()
+            val s = ans.toString()
         }
 
+        //Toast syntax
+        //Toast.makeText(this@MainActivity, "Its toast!", Toast.LENGTH_SHORT).show()
     }
     fun Button_two(view: View) {
         //declare variable in kotlin
