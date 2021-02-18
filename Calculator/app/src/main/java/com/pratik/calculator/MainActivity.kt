@@ -204,4 +204,21 @@ class MainActivity : AppCompatActivity() {
         //Toast syntax
         Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
+
+    fun button_plue(view: View) {
+        Toast.makeText(this@MainActivity, "+" , Toast.LENGTH_SHORT).show()
+    }
+
+    fun Button_neg(view: View) {
+        Toast.makeText(this@MainActivity, "-" , Toast.LENGTH_SHORT).show()
+
+    }
+    fun Button_sub(view: View) {
+        Toast.makeText(this@MainActivity, "*" , Toast.LENGTH_SHORT).show()
+
+    }
+    fun Button_div(view: View) {
+        Toast.makeText(this@MainActivity, "/" , Toast.LENGTH_SHORT).show()
+
+    }
 }
