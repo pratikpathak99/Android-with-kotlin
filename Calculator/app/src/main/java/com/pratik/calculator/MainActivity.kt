@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-
-
     val ans = null ;
 
     fun Button_on(v: View) {
