@@ -29,8 +29,12 @@ class MainActivity : AppCompatActivity() {
 
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
+
+            //set TextView Value
             text=num
             var ans: Int = "1".toInt()
+
+            //Type Convert Int To String
              s = ans.toString()
         }
 
