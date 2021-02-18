@@ -17,24 +17,34 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-    val ans = null ;
+    val ans = "" ;
+    var st = ""
+    var testans = "";
 
     fun Button_on(v: View) {
 
         //declare variable in kotlin
         val num = "1"
-        var st = ""
+
 
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
-
             //set TextView Value
-            text=num
+            //text=num
             var ans: Int = "1".toInt()
 
             //Type Convert Int To String
              st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
+
         }
+
+
+
+        //Toast.makeText(this@MainActivity, test , Toast.LENGTH_SHORT).show()
+
+
 
         //Toast syntax
         Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
@@ -45,8 +55,17 @@ class MainActivity : AppCompatActivity() {
 
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
-            text=num
+
+            var ans: Int = "2".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
         }
+
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_three(view: View) {
         //declare variable in kotlin
@@ -55,7 +74,16 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "3".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_four(view: View) {
         //declare variable in kotlin
@@ -64,7 +92,16 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "4".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_five(view: View) {
         //declare variable in kotlin
@@ -73,7 +110,15 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "5".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_six(view: View) {
         //declare variable in kotlin
@@ -82,7 +127,14 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "6".toInt()
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_seven(view: View) {
         //declare variable in kotlin
@@ -91,7 +143,14 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "7".toInt()
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_eight(view: View) {
         //declare variable in kotlin
@@ -100,22 +159,49 @@ class MainActivity : AppCompatActivity() {
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "8".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_nine(view: View) {
         //declare variable in kotlin
         val num = "9"
 
+
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
+            var ans: Int = "9".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
         }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
-    fun Button_zero(view: View) {//declare variable in kotlin
+    fun Button_zero(view: View) {
+        //declare variable in kotlin
         val num = "0"
 
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
             text=num
-        }}
+            var ans: Int = "0".toInt()
+
+            //Type Convert Int To String
+            st = ans.toString()
+            testans = "$testans $ans"
+            text= testans
+        }
+        //Toast syntax
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
+    }
 }
