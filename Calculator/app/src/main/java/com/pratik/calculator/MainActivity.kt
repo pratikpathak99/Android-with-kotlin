@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         //declare variable in kotlin
         val num = "1"
-        var s = ""
+        var st = ""
 
         //accessing our textview from layout
         val textView = findViewById<TextView>(R.id.TextView_Ans).apply {
@@ -35,11 +35,11 @@ class MainActivity : AppCompatActivity() {
             var ans: Int = "1".toInt()
 
             //Type Convert Int To String
-             s = ans.toString()
+             st = ans.toString()
         }
 
         //Toast syntax
-        Toast.makeText(this@MainActivity, s , Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_two(view: View) {
         //declare variable in kotlin
