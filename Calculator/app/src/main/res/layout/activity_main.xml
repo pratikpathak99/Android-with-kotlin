@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pratik Calculator"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_Ans"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/back"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="1"
+                android:onClick="Button_on"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="2"
+                android:onClick="Button_two"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="3"
+                android:onClick="Button_three"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="4"
+                android:onClick="Button_four"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="5"
+                android:onClick="Button_five"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="6"
+                android:onClick="Button_six"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="7"
+                android:onClick="Button_seven"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="8"
+                android:onClick="Button_eight"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="9"
+                android:onClick="Button_nine"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:onClick="Button_zero"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
