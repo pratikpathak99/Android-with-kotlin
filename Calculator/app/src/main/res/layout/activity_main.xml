@@ -142,11 +142,13 @@
             android:layout_marginTop="30dp">
 
             <Button
+                android:id="@+id/plus"
                 android:onClick="button_plue"
                 android:layout_marginRight="10dp"
                 android:text="+"/>
 
             <Button
+                android:id="@+id/button_neg"
                 android:layout_marginRight="10dp"
                 android:text="-"
                 android:onClick="Button_neg"/>
@@ -160,11 +162,13 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/button_sub"
                 android:layout_marginRight="10dp"
                 android:text="*"
                 android:onClick="Button_sub"/>
 
             <Button
+                android:id="@+id/button_div"
                 android:layout_marginRight="10dp"
                 android:text="/"
                 android:onClick="Button_div"/>
@@ -184,5 +188,17 @@
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/TextView_finalAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"/>
+
 
 </LinearLayout>
