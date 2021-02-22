@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var Button_neg : Button
     lateinit var Button_sub : Button
     lateinit var Button_div : Button
+    lateinit var Button_total : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         Button_sub = findViewById(R.id.button_sub)
         Button_div = findViewById(R.id.button_div)
         finalAns = findViewById(R.id.TextView_finalAns)
+        Button_total = findViewById(R.id.Button_total)
+
+        Button_total.setVisibility(View.GONE);
 
         // Hide Action Bar
         supportActionBar?.hide()
@@ -192,7 +196,7 @@ class MainActivity : AppCompatActivity() {
             text= testans
         }
     }
-
+    var symbol:String = ""
     fun button_plue(view: View) {
         val ansone = textView.text.toString()
         if(ansone==""){
@@ -206,6 +210,8 @@ class MainActivity : AppCompatActivity() {
             Button_sub.setVisibility(View.GONE);
             Button_div.setVisibility(View.GONE);
             finalAns.setText("Answer :- "+ansone+" + ")
+            symbol = "+"
+            Button_total.setVisibility(View.VISIBLE);
         }
     }
 
@@ -217,11 +223,14 @@ class MainActivity : AppCompatActivity() {
         else{
             Toast.makeText(this@MainActivity, ansone , Toast.LENGTH_SHORT).show()
             textView.setText("");
+
             plus.setVisibility(View.GONE);
             Button_neg.setVisibility(View.GONE);
             Button_sub.setVisibility(View.GONE);
             Button_div.setVisibility(View.GONE);
             finalAns.setText("Answer :- "+ansone+" - ")
+            symbol = "-"
+            Button_total.setVisibility(View.VISIBLE);
         }
 
     }
@@ -238,6 +247,8 @@ class MainActivity : AppCompatActivity() {
             Button_sub.setVisibility(View.GONE);
             Button_div.setVisibility(View.GONE);
             finalAns.setText("Answer :- "+ansone+" * ")
+            symbol = "*"
+            Button_total.setVisibility(View.VISIBLE);
         }
 
     }
@@ -254,7 +265,13 @@ class MainActivity : AppCompatActivity() {
             Button_sub.setVisibility(View.GONE);
             Button_div.setVisibility(View.GONE);
             finalAns.setText("Answer :- "+ansone+" / ")
+            symbol = "/"
+            Button_total.setVisibility(View.VISIBLE);
         }
 
+    }
+
+    fun total(view: View) {
+        Toast.makeText(this@MainActivity, symbol , Toast.LENGTH_SHORT).show()
     }
 }
