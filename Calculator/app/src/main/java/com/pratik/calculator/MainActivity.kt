@@ -3,15 +3,30 @@ package com.pratik.calculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var textView: TextView
+    lateinit var finalAns : TextView
+    lateinit var plus: Button
+    lateinit var Button_neg : Button
+    lateinit var Button_sub : Button
+    lateinit var Button_div : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        textView = findViewById(R.id.TextView_Ans)
+        plus = findViewById(R.id.plus)
+        Button_neg = findViewById(R.id.button_neg)
+        Button_sub = findViewById(R.id.button_sub)
+        Button_div = findViewById(R.id.button_div)
+        finalAns = findViewById(R.id.TextView_finalAns)
 
         // Hide Action Bar
         supportActionBar?.hide()
@@ -35,19 +50,11 @@ class MainActivity : AppCompatActivity() {
 
             //Type Convert Int To String
              st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
 
         }
-
-
-
         //Toast.makeText(this@MainActivity, test , Toast.LENGTH_SHORT).show()
-
-
-
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_two(view: View) {
         //declare variable in kotlin
@@ -60,12 +67,9 @@ class MainActivity : AppCompatActivity() {
 
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_three(view: View) {
         //declare variable in kotlin
@@ -79,11 +83,9 @@ class MainActivity : AppCompatActivity() {
             //Type Convert Int To String
             st = ans.toString()
 
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_four(view: View) {
         //declare variable in kotlin
@@ -97,11 +99,9 @@ class MainActivity : AppCompatActivity() {
             //Type Convert Int To String
             st = ans.toString()
 
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_five(view: View) {
         //declare variable in kotlin
@@ -114,11 +114,9 @@ class MainActivity : AppCompatActivity() {
 
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_six(view: View) {
         //declare variable in kotlin
@@ -130,11 +128,9 @@ class MainActivity : AppCompatActivity() {
             var ans: Int = "6".toInt()
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_seven(view: View) {
         //declare variable in kotlin
@@ -146,11 +142,9 @@ class MainActivity : AppCompatActivity() {
             var ans: Int = "7".toInt()
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_eight(view: View) {
         //declare variable in kotlin
@@ -163,11 +157,9 @@ class MainActivity : AppCompatActivity() {
 
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_nine(view: View) {
         //declare variable in kotlin
@@ -181,11 +173,9 @@ class MainActivity : AppCompatActivity() {
 
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
     fun Button_zero(view: View) {
         //declare variable in kotlin
@@ -198,27 +188,73 @@ class MainActivity : AppCompatActivity() {
 
             //Type Convert Int To String
             st = ans.toString()
-            testans = "$testans $ans"
+            testans = "$testans$ans"
             text= testans
         }
-        //Toast syntax
-        Toast.makeText(this@MainActivity, st , Toast.LENGTH_SHORT).show()
     }
 
     fun button_plue(view: View) {
-        Toast.makeText(this@MainActivity, "+" , Toast.LENGTH_SHORT).show()
+        val ansone = textView.text.toString()
+        if(ansone==""){
+            Toast.makeText(this@MainActivity, "Please Enter Some Value" , Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(this@MainActivity, ansone , Toast.LENGTH_SHORT).show()
+            textView.setText("");
+            plus.setVisibility(View.GONE);
+            Button_neg.setVisibility(View.GONE);
+            Button_sub.setVisibility(View.GONE);
+            Button_div.setVisibility(View.GONE);
+            finalAns.setText("Answer :- "+ansone+" + ")
+        }
     }
 
     fun Button_neg(view: View) {
-        Toast.makeText(this@MainActivity, "-" , Toast.LENGTH_SHORT).show()
+        val ansone = textView.text.toString()
+        if(ansone==""){
+            Toast.makeText(this@MainActivity, "Please Enter Some Value" , Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(this@MainActivity, ansone , Toast.LENGTH_SHORT).show()
+            textView.setText("");
+            plus.setVisibility(View.GONE);
+            Button_neg.setVisibility(View.GONE);
+            Button_sub.setVisibility(View.GONE);
+            Button_div.setVisibility(View.GONE);
+            finalAns.setText("Answer :- "+ansone+" - ")
+        }
 
     }
     fun Button_sub(view: View) {
-        Toast.makeText(this@MainActivity, "*" , Toast.LENGTH_SHORT).show()
+        val ansone = textView.text.toString()
+        if(ansone==""){
+            Toast.makeText(this@MainActivity, "Please Enter Some Value" , Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(this@MainActivity, ansone , Toast.LENGTH_SHORT).show()
+            textView.setText("");
+            plus.setVisibility(View.GONE);
+            Button_neg.setVisibility(View.GONE);
+            Button_sub.setVisibility(View.GONE);
+            Button_div.setVisibility(View.GONE);
+            finalAns.setText("Answer :- "+ansone+" * ")
+        }
 
     }
     fun Button_div(view: View) {
-        Toast.makeText(this@MainActivity, "/" , Toast.LENGTH_SHORT).show()
+        val ansone = textView.text.toString()
+        if(ansone==""){
+            Toast.makeText(this@MainActivity, "Please Enter Some Value" , Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(this@MainActivity, ansone , Toast.LENGTH_SHORT).show()
+            textView.setText("");
+            plus.setVisibility(View.GONE);
+            Button_neg.setVisibility(View.GONE);
+            Button_sub.setVisibility(View.GONE);
+            Button_div.setVisibility(View.GONE);
+            finalAns.setText("Answer :- "+ansone+" / ")
+        }
 
     }
 }
