@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADA_Program">
-        <activity android:name=".Program_Seven"></activity>
+        <activity android:name=".Program_nine"></activity>
+        <activity android:name=".Program_Seven" />
         <activity android:name=".Program_Six" />
         <activity android:name=".Program_One" />
         <activity android:name=".MainActivity">
