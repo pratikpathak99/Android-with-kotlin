@@ -48,4 +48,9 @@ class MainActivity : AppCompatActivity() {
     fun program_three(view: View) {
         Toast.makeText(applicationContext,"Android Program in Physical Device..", Toast.LENGTH_SHORT).show()
     }
+
+    fun program_nine(view: View) {
+        intent = Intent(applicationContext, Program_nine::class.java)
+        startActivity(intent)
+    }
 }
