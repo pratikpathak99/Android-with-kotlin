@@ -53,4 +53,23 @@ class MainActivity : AppCompatActivity() {
         intent = Intent(applicationContext, Program_nine::class.java)
         startActivity(intent)
     }
+
+    fun program_ten(view: View) {
+        val id:Int = 10
+        val language:String = "kotlin"
+
+        intent = Intent(this, program_ten::class.java)
+        intent.putExtra("id_value", id)
+        intent.putExtra("language_value", language)
+        startActivity(intent)
+    }
+    fun program_eleven(view: View) {
+        intent = Intent(applicationContext,program_eleven::class.java)
+        startActivity(intent);
+    }
+
+    fun program_twelve(view: View) {
+        intent = Intent(applicationContext,program_twelve::class.java)
+        startActivity(intent);
+    }
 }
