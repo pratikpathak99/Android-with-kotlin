@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".program_thirteen"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Click Me"
+        android:textColor="@color/button_text_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <Switch
+        android:id="@+id/buttonSwitch"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:checked="true"
+        android:text="Enabled"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+
+</LinearLayout>
