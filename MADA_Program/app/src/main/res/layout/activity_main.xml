@@ -29,6 +29,17 @@
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PART-II (ANDROID STUDIO WITH KOLTIN)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"/>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,6 +130,24 @@
                 android:text="Program 13"
                 android:onClick="program_thirteen"
                 android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PART-III (ADVANCED TOPICS)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Program 1"
+                android:layout_marginBottom="10dp"
+                android:onClick="program_one_part_three"/>
 
         </LinearLayout>
 
