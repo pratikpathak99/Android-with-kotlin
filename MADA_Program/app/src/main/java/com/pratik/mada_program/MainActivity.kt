@@ -72,4 +72,9 @@ class MainActivity : AppCompatActivity() {
         intent = Intent(applicationContext,program_twelve::class.java)
         startActivity(intent);
     }
+
+    fun program_thirteen(view: View) {
+        intent = Intent(applicationContext,program_thirteen::class.java)
+        startActivity(intent);
+    }
 }
