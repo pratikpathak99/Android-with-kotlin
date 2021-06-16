@@ -16,4 +16,9 @@ class program_two_part_three : AppCompatActivity() {
         intent = Intent(applicationContext,shared_preference::class.java)
         startActivity(intent);
     }
+
+    fun Internal_Storage(view: View) {
+        intent = Intent(applicationContext,Internal_Storage::class.java)
+        startActivity(intent);
+    }
 }
