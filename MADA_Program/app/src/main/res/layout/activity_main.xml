@@ -150,6 +150,14 @@
                 android:onClick="program_one_part_three"
                 />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Program 2"
+                android:layout_marginBottom="10dp"
+                android:onClick="program_two_part_three"
+                />
+
         </LinearLayout>
 
     </ScrollView>
