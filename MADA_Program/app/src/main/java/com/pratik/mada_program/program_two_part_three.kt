@@ -14,11 +14,16 @@ class program_two_part_three : AppCompatActivity() {
 
     fun shared_preference(view: View) {
         intent = Intent(applicationContext,shared_preference::class.java)
-        startActivity(intent);
+        startActivity(intent)
     }
 
     fun Internal_Storage(view: View) {
         intent = Intent(applicationContext,Internal_Storage::class.java)
-        startActivity(intent);
+        startActivity(intent)
+    }
+
+    fun external_storage(view: View) {
+        intent = Intent(applicationContext,external_storage::class.java)
+        startActivity(intent)
     }
 }
