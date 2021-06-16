@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pratik.mada_program">
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADA_Program">
-        <activity android:name=".afterNotification"></activity>
+        <activity android:name=".shared_preference"></activity>
+        <activity android:name=".program_two_part_three" />
+        <activity android:name=".afterNotification" />
         <activity android:name=".program_one_part_three" />
         <activity android:name=".program_thirteen" />
         <activity android:name=".program_twelve" />
