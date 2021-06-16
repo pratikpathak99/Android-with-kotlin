@@ -147,7 +147,8 @@
                 android:layout_height="wrap_content"
                 android:text="Program 1"
                 android:layout_marginBottom="10dp"
-                android:onClick="program_one_part_three"/>
+                android:onClick="program_one_part_three"
+                />
 
         </LinearLayout>
 
