@@ -87,4 +87,9 @@ class MainActivity : AppCompatActivity() {
         intent = Intent(applicationContext,program_two_part_three::class.java)
         startActivity(intent);
     }
+
+    fun program_three_part_three(view: View) {
+        intent = Intent(applicationContext,program_three_part_three::class.java)
+        startActivity(intent);
+    }
 }
