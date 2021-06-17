@@ -166,6 +166,14 @@
                 android:onClick="program_three_part_three"
                 />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Program 4"
+                android:layout_marginBottom="10dp"
+                android:onClick="program_four_part_three"
+                />
+
         </LinearLayout>
 
     </ScrollView>
