@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pratik.mada_program">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADA_Program">
-        <activity android:name=".external_storage"></activity>
+        <activity android:name=".program_three_part_three"></activity>
+        <activity android:name=".external_storage" />
         <activity android:name=".Internal_Storage" />
         <activity android:name=".shared_preference" />
         <activity android:name=".program_two_part_three" />
