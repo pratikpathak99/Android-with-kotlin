@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75408797267",
+    "project_id": "mada-program",
+    "storage_bucket": "mada-program.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75408797267:android:62b12115bf1faa87baa0a6",
+        "android_client_info": {
+          "package_name": "com.pratik.mada_program"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75408797267-jt1hkjmjk3u0jrr65narnrno5qp2qifl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCypr0zXwMt0_zn_9EE9rLZ1LwdhKYPWGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75408797267-jt1hkjmjk3u0jrr65narnrno5qp2qifl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
