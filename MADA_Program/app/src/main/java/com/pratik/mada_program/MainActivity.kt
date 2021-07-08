@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("language_value", language)
         startActivity(intent)
     }
+
     fun program_eleven(view: View) {
         intent = Intent(applicationContext,program_eleven::class.java)
         startActivity(intent);
@@ -95,6 +96,16 @@ class MainActivity : AppCompatActivity() {
 
     fun program_four_part_three(view: View) {
         intent = Intent(applicationContext,program_four_part_three::class.java)
+        startActivity(intent)
+    }
+
+    fun program_five_part_three(view: View) {
+        intent = Intent(applicationContext,program_five_part_three::class.java)
+        startActivity(intent)
+    }
+
+    fun program_six_part_three(view: View) {
+        intent = Intent(applicationContext,program_six_part_three::class.java)
         startActivity(intent)
     }
 }
