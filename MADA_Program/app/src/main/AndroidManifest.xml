@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADA_Program">
-        <activity android:name=".program_four_part_three"></activity>
+        <activity android:name=".program_six_part_three"></activity>
+        <activity android:name=".program_five_part_three" />
+        <activity android:name=".program_four_part_three" />
         <activity android:name=".program_three_part_three" />
         <activity android:name=".external_storage" />
         <activity android:name=".Internal_Storage" />
